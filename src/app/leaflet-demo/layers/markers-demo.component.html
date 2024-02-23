@@ -1,12 +1,14 @@
 <div class=" ">
+  
 	<div class="">
-		
-		<!-- Map -->
-		<div id="map" leaflet style="height: 655px; width: 1512px; margin-left: -200px; margin-top: -120px;"
+	<!-- Map -->
+		<div  id="map"   leaflet 
+		style="height: 660px; width: 1512px; margin-left: -200px; margin-top: -20px;
+				border: 2px solid black;"
 			 [leafletOptions]="options"
 			 [leafletLayers]="markers">
+
 		</div>
- 
 		<div class="row">
 			<div class="row">
 				<label class="col col-form-label">{{markers?.length}} Markers</label>
@@ -18,18 +20,14 @@
 						(click)="addMarker()">Add Marker</button>
 
 				<button type="button"
-						class="btn btn-primary m-1"
+						class="btn btn-danger m-1 "
 						(click)="removeMarker()">Remove Marker</button>
-
+						
 			</form>
 		</div>
 
 	</div>
-
+ 
 </div>
 
-
-
-
-
-
+ 
